@@ -1,0 +1,13 @@
+<p> 
+  Title <%= @song.title %>
+  <br>
+    Artist <%= @song.artist %>
+  <br>
+    Duration <%= @song.duration %>
+  <br>
+    Price <%= @song.price %>
+</p>
+
+<p>
+  <%= link_to "#{@album.name} Songs", album_songs_path(@album) %>
+</p>

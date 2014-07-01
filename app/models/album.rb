@@ -11,4 +11,8 @@ class Album < ActiveRecord::Base
   # in memory and in the the DB.
   has_many :songs, dependent: :destroy
 
+  has_many :managed_albums, class_name: 'ManagedAlbums', dependent: :destroy
+ 
+  has_many :users, through: :managed_albums
+  
 end

@@ -1,7 +1,7 @@
 User.delete_all
 Album.delete_all
 Song.delete_all
-ManagedAlbums.delete_all
+ManagedAlbum.delete_all
 
 sea_change = Album.create(name: "Sea Change", genre: 'rock')
 sea_change.songs.create!(title: 'Golden Age', artist: "Beck", price: 1.99, duration: 215)
